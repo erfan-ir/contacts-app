@@ -5,7 +5,7 @@ console.log(chalk.blue("Welcome to the contact manager"));
 yargs.command({
   command: "create",
   aliases: ["c"],
-  describe: console.log("[create new contact]"),
+  describe: `${chalk.green("[create new contact]")}`,
   builder: {
       fullname: {
           alias: "f",
@@ -34,7 +34,7 @@ yargs.command({
 yargs.command({
   command: "list",
   aliases: ["l"],
-  describe: console.log("[listing the saved contacts]"),
+  describe: `${chalk.green("[listing the saved contacts]")}`,
   handler() {
       listContacts();
   },
@@ -43,7 +43,7 @@ yargs.command({
 yargs.command({
   command: "remove",
   aliases: ["r"],
-  describe: console.log("[remove contact]"),
+  describe: `${chalk.green("[remove contact]")}`,
   builder: {
       fullname: {
           alias: "f",

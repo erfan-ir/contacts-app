@@ -1,0 +1,19 @@
+{
+  "name": "contact-app",
+  "version": "1.0.0",
+  "description": "contact app with node js",
+  "license": "ISC",
+  "author": "Erfan irandoust",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "yargs": "^17.7.2"
+  }
+}
